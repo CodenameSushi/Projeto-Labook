@@ -30,7 +30,11 @@ export interface PostDB {
     likes: number,
     dislikes: number,
     created_at: string,
-    updated_at:string
+    updated_at: string
+}
+
+export interface PostWithCreatorDB extends PostDB {
+    creator_name: string,
 }
 
 export interface UserDB {
