@@ -66,7 +66,9 @@ SELECT
     users.name AS creator_name
 FROM posts
 JOIN users
-ON posts.creator_id = users.id
+ON posts.creator_id = users.id;
+
+SELECT * FROM likes_dislikes
 
 
 
